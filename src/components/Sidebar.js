@@ -24,10 +24,10 @@ function Sidebar({ lowStockItems, activePage, onNavigate }) {
 
       <nav className="sidebar-nav">
         {navItems.map(({ icon: Icon, label, key }) => (
-          <a key={key} href="#" className={`nav-item ${activePage === key ? 'active' : ''}`} onClick={(e) => { e.preventDefault(); onNavigate(key); }}>
+          <button key={key} className={`nav-item ${activePage === key ? 'active' : ''}`} onClick={() => onNavigate(key)}>
             <Icon size={20} />
             <span>{label}</span>
-          </a>
+          </button>
         ))}
       </nav>
 

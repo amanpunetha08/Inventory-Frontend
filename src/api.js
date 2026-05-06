@@ -14,7 +14,7 @@ api.interceptors.response.use(
   (response) => response,
   async (error) => {
     const originalRequest = error.config;
-    if (error.response?.status === 401 && !originalRequest._retry) {
+    if (error.response?.status === 401 && !originalRequest._retry && !originalRequest.url.includes('/auth/')) {
       originalRequest._retry = true;
       const refresh = localStorage.getItem('refresh_token');
       if (refresh) {
@@ -25,11 +25,8 @@ api.interceptors.response.use(
           return api(originalRequest);
         } catch (e) {
           localStorage.clear();
-          window.location.reload();
+          window.location.href = '/';
         }
-      } else {
-        localStorage.clear();
-        window.location.reload();
       }
     }
     return Promise.reject(error);

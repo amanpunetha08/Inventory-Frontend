@@ -742,3 +742,64 @@ body {
   cursor: pointer;
   accent-color: #3b82f6;
 }
+
+/* Dashboard Redesign */
+.dash-date-badge { background: var(--bg-card); border: 1px solid var(--border); padding: 8px 14px; border-radius: 8px; font-size: 13px; color: var(--text-secondary); }
+.dash-stats { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; margin-bottom: 20px; }
+.dash-mid-row { display: grid; grid-template-columns: 2fr 1.3fr 1fr; gap: 16px; margin-bottom: 20px; }
+.dash-bottom-row { display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 16px; }
+.dash-panel { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
+.dash-panel h3 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 12px; }
+.dash-panel-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.dash-panel-header h3 { margin-bottom: 0; }
+.dash-view-all { background: none; border: none; color: #3b82f6; font-size: 13px; cursor: pointer; font-weight: 500; }
+.dash-select { padding: 5px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 12px; background: var(--bg-card); color: var(--text-primary); }
+
+/* Line Chart */
+.dash-line-chart { width: 100%; height: auto; }
+.dash-legend { display: flex; gap: 16px; margin-top: 10px; font-size: 12px; color: var(--text-secondary); }
+.dash-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px; }
+
+/* Donut */
+.dash-donut-wrap { display: flex; align-items: center; gap: 16px; }
+.dash-donut-legend { display: flex; flex-direction: column; gap: 6px; font-size: 12px; color: var(--text-primary); }
+.dash-donut-legend i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.dash-donut-legend span { color: var(--text-muted); margin-left: 4px; }
+
+/* Activity */
+.dash-activity-list { display: flex; flex-direction: column; gap: 12px; }
+.dash-activity-item { display: flex; gap: 10px; align-items: flex-start; }
+.dash-activity-icon { font-size: 16px; margin-top: 2px; }
+.dash-activity-item p { font-size: 13px; margin: 0; color: var(--text-primary); }
+.dash-activity-item span { font-size: 11px; color: var(--text-muted); }
+
+/* Top Products Table */
+.dash-table { width: 100%; border-collapse: collapse; }
+.dash-table th { font-size: 11px; text-transform: uppercase; color: var(--text-muted); font-weight: 600; text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--border); }
+.dash-table td { font-size: 13px; padding: 10px; border-bottom: 1px solid var(--border); color: var(--text-primary); }
+.dash-table tr:last-child td { border-bottom: none; }
+
+/* Stock Alerts */
+.dash-alerts-list { display: flex; flex-direction: column; gap: 12px; }
+.dash-alert-item { display: flex; gap: 10px; align-items: flex-start; }
+.dash-alert-icon { font-size: 18px; }
+.dash-alert-type { font-size: 11px; font-weight: 600; display: block; }
+.dash-alert-type.orange { color: #f59e0b; }
+.dash-alert-type.red { color: #ef4444; }
+.dash-alert-item strong { font-size: 13px; display: block; color: var(--text-primary); }
+.dash-alert-item p { font-size: 12px; color: var(--text-muted); margin: 2px 0 0; }
+
+/* Warehouse */
+.dash-warehouse-list { display: flex; flex-direction: column; gap: 12px; }
+.dash-warehouse-item { display: grid; grid-template-columns: 1fr auto 60px auto; align-items: center; gap: 8px; font-size: 13px; }
+.dash-warehouse-stock { font-weight: 600; color: var(--text-primary); }
+.dash-warehouse-bar { height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.dash-warehouse-bar div { height: 100%; background: #3b82f6; border-radius: 3px; }
+.dash-warehouse-pct { font-size: 12px; color: var(--text-muted); text-align: right; }
+.dash-warehouse-total { display: flex; justify-content: space-between; padding-top: 10px; border-top: 1px solid var(--border); font-weight: 600; font-size: 13px; color: var(--text-primary); }
+
+@media (max-width: 1200px) {
+  .dash-stats { grid-template-columns: repeat(3, 1fr); }
+  .dash-mid-row { grid-template-columns: 1fr 1fr; }
+  .dash-bottom-row { grid-template-columns: 1fr; }
+}

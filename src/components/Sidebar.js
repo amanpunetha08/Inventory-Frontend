@@ -1,11 +1,12 @@
-import { LayoutDashboard, Package, ShoppingCart, Users, Grid3X3, BarChart3, Bell, Settings, Crown } from 'lucide-react';
+import { LayoutDashboard, Package, ShoppingCart, Users, Grid3X3, Warehouse, BarChart3, Bell, Settings, Crown } from 'lucide-react';
 
 const navItems = [
   { icon: LayoutDashboard, label: 'Dashboard', key: 'dashboard' },
-  { icon: Package, label: 'Inventory', key: 'inventory' },
+  { icon: Package, label: 'Products', key: 'inventory' },
   { icon: ShoppingCart, label: 'Orders', key: 'orders' },
   { icon: Users, label: 'Suppliers', key: 'suppliers' },
   { icon: Grid3X3, label: 'Categories', key: 'categories' },
+  { icon: Warehouse, label: 'Warehouses', key: 'warehouses' },
   { icon: BarChart3, label: 'Reports', key: 'reports' },
   { icon: Bell, label: 'Alerts', key: 'alerts' },
   { icon: Settings, label: 'Settings', key: 'settings' },

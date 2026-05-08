@@ -67,6 +67,12 @@ export const createCategory = (data) => api.post('/categories/', data);
 export const updateCategory = (id, data) => api.put(`/categories/${id}/`, data);
 export const deleteCategory = (id) => api.delete(`/categories/${id}/`);
 
+// Warehouses
+export const getWarehouses = () => api.get('/warehouses/');
+export const createWarehouse = (data) => api.post('/warehouses/', data);
+export const updateWarehouse = (id, data) => api.put(`/warehouses/${id}/`, data);
+export const deleteWarehouse = (id) => api.delete(`/warehouses/${id}/`);
+
 // Notifications
 export const getNotifications = () => api.get('/notifications/');
 export const markNotificationRead = (id) => api.post(`/notifications/${id}/read/`);

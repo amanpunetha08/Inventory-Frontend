@@ -11,6 +11,7 @@ import Categories from './Categories';
 import Dashboard from './Dashboard';
 import Reports from './Reports';
 import Alerts from './Alerts';
+import Warehouses from './Warehouses';
 import { getItems, createItem, updateItem, deleteItem } from '../api';
 
 function Inventory({ user, onLogout }) {
@@ -92,6 +93,7 @@ function Inventory({ user, onLogout }) {
       case 'orders': return <Orders />;
       case 'suppliers': return <Suppliers />;
       case 'categories': return <Categories />;
+      case 'warehouses': return <Warehouses />;
       case 'reports': return <Reports />;
       case 'alerts': return <Alerts />;
       default: return (

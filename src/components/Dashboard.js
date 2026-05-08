@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Package, Box, AlertTriangle, XCircle, DollarSign, TrendingUp, TrendingDown } from 'lucide-react';
+import { Package, Box, AlertTriangle, XCircle, DollarSign } from 'lucide-react';
 import { getDashboard } from '../api';
 import { useCurrency } from '../CurrencyContext';
 

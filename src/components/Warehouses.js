@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Plus, Edit2, Trash2, Warehouse } from 'lucide-react';
+import { Plus, Edit2, Trash2 } from 'lucide-react';
 import { getWarehouses, createWarehouse, updateWarehouse, deleteWarehouse } from '../api';
 
 function Warehouses() {
